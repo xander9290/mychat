@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background: #464159;
+}
+.main-container{
+    width: 700px;
+    height: 100vh;
+    overflow: hidden;
+    margin: 4px auto;
+    border-radius: 5px;
+}
+    .form-container{
+        background: #faf5ef;
+        padding: 16px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+        .form-div{
+            width: 450px;
+            margin: 100px auto;
+            border-radius: 6px;
+        }
+        .form-container form p{
+            margin: 10px;
+        }
+        .registrado{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    .users-container{
+        background: #6c7b95;
+        width: 200px;
+        height: 100vh;
+        right: 0;
+        top: 0;
+    }
+        .users-container p{
+            padding: 4px;
+        }
+        .users-container p img{
+            width: 45px;
+            height: 45px;
+            margin-right: 4px;
+            border-radius: 50%;
+        }
+    .chat-header{
+        height: 50px;
+        background: #6c7b95;
+    }
+    .chat-body{
+        height: 85%;
+        background: #faf5ef;
+        font-family: 'Montserrat',sans-serif;
+        overflow-y: scroll;
+    }
+        .chat-body p{
+            padding: 8px;
+            position: relative;
+            bottom: 0;
+        }
+        .chat-body p>img{
+            width: 45px;
+            height: 45px;
+            float: left;
+            margin-right: 7px;
+            border-radius: 50%;
+        }
+        .chat-body p>span.nick-name{
+            font-weight: 600;
+            margin-left: 65px;
+            display: block;
+            margin-right: 4px;
+        }
+        .chat-body p>span.message{
+            display: block;
+            margin-left: 65px;
+            margin-bottom: 3px;
+            text-align: justify;
+            font-size: .9rem;
+        }
+        .chat-body p:nth-child(even){
+            background: #c8dad3;
+        }
+        .chat-body p:nth-child(odd){
+            background: #dff0ea;
+        }
+    .chat-footer{
+        background: #d7d1c9;
+        height: 100%;
+    }
+        .chat-footer input[type=text]{
+            width: 80%;
+            padding: 8px;
+            margin-left: 4px;
+            margin-top: 5px;
+            border: 1px solid #6c7b95;
+            border-right: 0;
+            outline: none;
+            font-family: 'Montserrat',sans-serif;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .chat-footer button{
+            padding: 8px;
+            border: 1px solid #6c7b95;
+            border-left: 0;
+            font-family: 'Montserrat',sans-serif;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
